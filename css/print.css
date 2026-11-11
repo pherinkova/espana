@@ -1,0 +1,17 @@
+body { background: #fff; color: #000; font: 12pt/1.5 Georgia, serif; }
+.site-header, .site-footer { background: #fff; color: #000; border: 0; }
+.header-inner, .footer-inner, .section, .page-intro, .info-list, .planner { max-width: none; padding: 1rem 0; }
+.menu-toggle, .button, .search-input, .search-label, .skip-link { display: none !important; }
+.main-nav ul { display: flex; gap: 1rem; }
+.main-nav a { color: #000; padding: 0; }
+.main-nav a[aria-current="page"] { font-weight: bold; text-decoration: underline; }
+.hero { min-height: 0; background: none; color: #000; }
+.hero__content { padding: 1rem 0; }
+.hero h1 { font-size: 26pt; }
+.card-grid { display: block; }
+.place-card { display: flex; box-shadow: none; border: 1px solid #aaa; margin: 0 0 1rem; break-inside: avoid; }
+.place-card img { width: 25%; height: auto; }
+.highlight { background: #fff; color: #000; padding: 1rem 0; }
+.highlight p:not(.eyebrow), .site-footer p { color: #000; }
+a { color: #000; text-decoration: underline; }
+a[href]::after { content: " (" attr(href) ")"; font-size: 9pt; }
