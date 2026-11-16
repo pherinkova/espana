@@ -14,4 +14,4 @@ body { background: #fff; color: #000; font: 12pt/1.5 Georgia, serif; }
 .highlight { background: #fff; color: #000; padding: 1rem 0; }
 .highlight p:not(.eyebrow), .site-footer p { color: #000; }
 a { color: #000; text-decoration: underline; }
-a[href]::after { content: " (" attr(href) ")"; font-size: 9pt; }
+.site-header, .main-nav { display: none !important; }

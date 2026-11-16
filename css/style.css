@@ -11,7 +11,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; color: var(--ink); background: var(--cream); font-family: Arial, Helvetica, sans-serif; line-height: 1.65; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: "Segoe UI", sans-serif; line-height: 1.65; }
 img { display: block; width: 100%; height: auto; }
 a { color: var(--terracotta-dark); text-underline-offset: 3px; }
 a:hover { color: #6f2b1c; }
@@ -27,7 +27,7 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .main-nav a { display: block; padding: .55rem .7rem; border-radius: 6px; color: var(--ink); text-decoration: none; font-size: .92rem; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { background: var(--sand); color: var(--terracotta-dark); }
 .menu-toggle { display: none; border: 1px solid var(--line); background: white; border-radius: 6px; padding: .55rem .8rem; color: var(--ink); cursor: pointer; }
-.hero { min-height: 470px; display: flex; align-items: center; background: linear-gradient(90deg, rgba(28,30,31,.78), rgba(28,30,31,.12)), url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1800&q=85") center 48%/cover no-repeat; color: white; }
+.hero { min-height: 600px; display: flex; align-items: center; background: linear-gradient(90deg, rgba(28,30,31,.7), rgba(28,30,31,.12)), url("https://cdn.hometogo.net/assets/media/pics/1920_600/611909971e6e9.jpg") center 48%/cover no-repeat; color: white; }
 .hero__content { max-width: 1160px; width: 100%; margin: 0 auto; padding: 4rem 1.5rem; }
 .hero h1 { max-width: 650px; font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 1.05; margin: .3rem 0 1rem; letter-spacing: -.05em; }
 .hero p:not(.eyebrow) { max-width: 560px; font-size: 1.12rem; }
