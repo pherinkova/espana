@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Zadejte počet dní a odhadované denní výdaje na jednu osobu. Výsledek je orientační a nezahrnuje dopravu do Španělska.">
   <title>Plánování cesty | Descubre España</title>
-  <!-- Po zveřejnění nahraďte example.com skutečnou adresou webu. -->
   <link rel="canonical" href="https://pherinkova.github.io/espana/planovani.html">
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+  <meta name="author" content="Descubre España">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/print.css" media="print">
   <script src="js/script.js" defer></script>
@@ -16,7 +17,7 @@
   <a class="skip-link" href="#main">Přeskočit na obsah</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Descubre España – úvodní stránka"><img class="brand-mark" src="images/logo.svg" alt="" width="44" height="44"><span>Descubre <strong>España</strong></span></a>
+      <a class="brand" href="index.html" aria-label="Descubre España – úvodní stránka"><img decoding="async" class="brand-mark" src="images/logo.svg" alt="" width="35" height="35"><span>Descubre <strong>España</strong></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav id="main-nav" class="main-nav" aria-label="Hlavní navigace"><ul><li><a href="index.html">Domů</a></li>
 <li><a href="destinace.html">Destinace</a></li>
@@ -33,10 +34,10 @@
 <div class="planner__intro">
   <h2>Jednoduchá kalkulačka rozpočtu</h2>
   <p>Zadejte délku pobytu, odhadované denní výdaje a počet osob. Získáte rychlou představu o tom, kolik vás cesta do Španělska přibližně bude stát (výsledek je orientační a nezahrnuje dopravu).</p>
-  <ul class="check-list" style="margin-top: 1.5rem; list-style-type: none; padding-left: 1.5rem; color: var(--muted);">
-    <li style="margin-bottom: .1rem;">✓ Okamžitý přehled o denních výdajích</li>
-    <li style="margin-bottom: .1rem;">✓ Výpočet na míru pro jednotlivce i skupiny</li>
-    <li style="margin-bottom: .1rem;">✓ Pomůže vyhnout se neočekávaným výdajům</li>
+  <ul class="check-list planner-benefits">
+    <li>✓ Okamžitý přehled o denních výdajích</li>
+    <li>✓ Výpočet na míru pro jednotlivce i skupiny</li>
+    <li>✓ Pomůže vyhnout se neočekávaným výdajům</li>
   </ul>
 </div>
 <form id="budget-form" class="budget-form">
@@ -46,16 +47,17 @@
 <button class="button" type="submit">Spočítat rozpočet</button>
 </form>
 <p class="budget-result" id="budget-result" aria-live="polite">Orientační rozpočet se zobrazí zde.</p>
+<noscript><p class="small-note">Pro výpočet zapněte JavaScript. Orientačně: počet dní × denní rozpočet × počet osob.</p></noscript>
 </section>
 
-<section class="section" style="padding-top: 3rem;">
-  <div class="note-panel" style="grid-column: 1 / -1; margin-top: 3rem;">
-    <h2 style="font-size: 1.7rem; margin-bottom: 1rem;">Na co před odjezdem nezapomenout</h2>
-    <ul class="check-list" style="list-style-type: disc; margin-left: 1.5rem; color: var(--muted);">
-      <li style="margin-bottom: .1rem;">Zkontrolovat platnost dokladů.</li>
-      <li style="margin-bottom: .1rem;">Rezervovat ubytování a dopravu.</li>
-      <li style="margin-bottom: .1rem;">Připravit si cestovní pojištění.</li>
-      <li style="margin-bottom: .1rem;">Naplánovat si hlavní místa, která chcete navštívit.</li>
+<section class="section planner-checklist">
+  <div class="note-panel">
+    <h2>Na co před odjezdem nezapomenout</h2>
+    <ul class="check-list planner-before-departure">
+      <li>Zkontrolovat platnost dokladů.</li>
+      <li>Rezervovat ubytování a dopravu.</li>
+      <li>Připravit si cestovní pojištění.</li>
+      <li>Naplánovat si hlavní místa, která chcete navštívit.</li>
     </ul>
   </div>
 </section>

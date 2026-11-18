@@ -3,7 +3,7 @@
   --muted: #626b75;
   --cream: #fbf7f0;
   --paper: #ffffff;
-  --terracotta: #c85d3a;
+  --terracotta: #b34d2f;
   --terracotta-dark: #9f4228;
   --sand: #f0dfcc;
   --line: #e8dfd4;
@@ -11,7 +11,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; color: var(--ink); background: var(--cream); font-family: "Segoe UI", sans-serif; line-height: 1.65; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; }
 img { display: block; width: 100%; height: auto; }
 a { color: var(--terracotta-dark); text-underline-offset: 3px; }
 a:hover { color: #6f2b1c; }
@@ -23,18 +23,19 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--ink); font-size: 1.12rem; text-decoration: none; letter-spacing: -.03em; white-space: nowrap; }
 .brand strong { color: var(--terracotta); }
 .brand-mark { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--terracotta); color: white; font-weight: bold; }
+.main-nav[hidden] { display: none; }
 .main-nav ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .25rem; list-style: none; padding: 0; margin: 0; }
 .main-nav a { display: block; padding: .55rem .7rem; border-radius: 6px; color: var(--ink); text-decoration: none; font-size: .92rem; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { background: var(--sand); color: var(--terracotta-dark); }
 .menu-toggle { display: none; border: 1px solid var(--line); background: white; border-radius: 6px; padding: .55rem .8rem; color: var(--ink); cursor: pointer; }
-.hero { min-height: 600px; display: flex; align-items: center; background: linear-gradient(90deg, rgba(28,30,31,.7), rgba(28,30,31,.12)), url("https://cdn.hometogo.net/assets/media/pics/1920_600/611909971e6e9.jpg") center 48%/cover no-repeat; color: white; }
+.hero { min-height: 600px; display: flex; align-items: center; background: linear-gradient(90deg, rgba(28,30,31,.7), rgba(28,30,31,.12)), url("../images/hero.jpg") center 48%/cover no-repeat; color: white; }
 .hero__content { max-width: 1160px; width: 100%; margin: 0 auto; padding: 4rem 1.5rem; }
 .hero h1 { max-width: 650px; font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 1.05; margin: .3rem 0 1rem; letter-spacing: -.05em; }
 .hero p:not(.eyebrow) { max-width: 560px; font-size: 1.12rem; }
-.eyebrow { color: var(--terracotta); font-size: .76rem; font-weight: bold; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 .5rem; }
-.hero .eyebrow { color: #ffd4b8; }
-.button { display: inline-block; border: 0; border-radius: 6px; background: var(--terracotta); color: white; padding: .8rem 1.2rem; margin-top: .7rem; font: inherit; font-weight: bold; text-decoration: none; cursor: pointer; }
-.button:hover { background: var(--terracotta-dark); color: white; }
+.eyebrow { color: var(--terracotta-dark); font-size: .76rem; font-weight: bold; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 .5rem; }
+.hero .eyebrow, .highlight .eyebrow { color: #ffd4b8; }
+.button { display: inline-block; border: 0; border-radius: 6px; background: var(--terracotta-dark); color: white; padding: .8rem 1.2rem; margin-top: .7rem; font: inherit; font-weight: bold; text-decoration: none; cursor: pointer; }
+.button:hover { background: #7f321e; color: white; }
 .button--light { background: white; color: var(--terracotta-dark); }
 .button--light:hover { background: var(--sand); color: var(--ink); }
 .section, .page-intro, .note-panel, .planner, .info-list { max-width: 1160px; margin: 0 auto; padding: 4rem 1.5rem; }
@@ -72,11 +73,12 @@ h3 { font-size: 1.25rem; margin: 0 0 .5rem; }
 .site-footer { background: #242a30; color: #f7f3ed; }
 .footer-inner { display: block; padding-top: 2rem; padding-bottom: 2rem; }
 .brand--footer { color: white; }
+.brand--footer strong { color: #ffb08a; }
 .site-footer p { color: #d3d5d6; margin: .5rem 0; }
 .copyright { font-size: .85rem; }
 @media (max-width: 900px) {
   .header-inner { flex-wrap: wrap; }
-  .menu-toggle { display: inline-block; margin-left: auto; }
+  .js .menu-toggle { display: inline-block; margin-left: auto; }
   .main-nav { display: block; width: 100%; }
   .main-nav ul { justify-content: flex-start; }
   .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -93,3 +95,21 @@ h3 { font-size: 1.25rem; margin: 0 0 .5rem; }
   .highlight { display: block; padding-top: 2.5rem; padding-bottom: 2.5rem; }
   .info-list article { grid-template-columns: 45px 1fr; }
 }
+
+/* Styly pro stránku plánování – bez inline CSS v HTML. */
+.planner-benefits {
+  margin-top: 1.5rem;
+  list-style: none;
+  padding-left: 1.5rem;
+  color: var(--muted);
+}
+.planner-benefits li { margin-bottom: .1rem; }
+.planner-checklist { padding-top: 3rem; }
+.planner-checklist .note-panel { margin-top: 3rem; }
+.planner-checklist h2 { font-size: 1.7rem; margin-bottom: 1rem; }
+.planner-before-departure {
+  list-style: disc;
+  margin-left: 1.5rem;
+  color: var(--muted);
+}
+.planner-before-departure li { margin-bottom: .1rem; }
