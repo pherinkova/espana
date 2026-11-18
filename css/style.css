@@ -113,3 +113,4 @@ h3 { font-size: 1.25rem; margin: 0 0 .5rem; }
   color: var(--muted);
 }
 .planner-before-departure li { margin-bottom: .1rem; }
+.main-nav[hidden] { display: none; }
